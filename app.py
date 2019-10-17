@@ -9,9 +9,9 @@ from plotly.graph_objs import *
 
 ###### Define your variables #####
 tabtitle = 'Titanic!'
-color1='#92A5E8'
-color2='#8E44AD'
-color3='#FFC300'
+color1='#127782'
+color2='#ffa500'
+color3='#444c5c'
 sourceurl = 'https://www.kaggle.com/c/titanic'
 githublink = 'https://github.com/calijason76/titanic-example-app'
 
