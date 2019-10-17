@@ -48,7 +48,7 @@ app.layout = html.Div([
 @app.callback(dash.dependencies.Output('display-value', 'figure'),
               [dash.dependencies.Input('dropdown', 'value')])
 def display_value(continuous_var):
-    results=pd.DataFrame(df.groupby(['Cabin Class', 'Embarked'])[continuous_var].mean())
+    results=pd.DataFrame(df.groupby(['Cabin Class', 'Sex'])[continuous_var].mean())
     # Create a grouped bar chart
     mydata1 = go.Bar(
         x=results.loc['first'].index,
@@ -71,7 +71,7 @@ def display_value(continuous_var):
 
     mylayout = go.Layout(
         title='Grouped bar chart',
-        xaxis = dict(title = 'Port of Embarkation'), # x-axis label
+        xaxis = dict(title = 'Sex'), # x-axis label
         yaxis = dict(title = str(continuous_var)), # y-axis label
 
     )
