@@ -13,7 +13,7 @@ color1='#92A5E8'
 color2='#8E44AD'
 color3='#FFC300'
 sourceurl = 'https://www.kaggle.com/c/titanic'
-githublink = 'https://github.com/austinlasseter/titanic-example-app'
+githublink = 'https://github.com/calijason76/titanic-example-app'
 
 
 ###### Import a dataframe #######
